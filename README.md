@@ -1,6 +1,6 @@
 Simple command line logging script to log a one-off note.
 
-Basically used for simple things like:
+Useful for simple things like:
 
 * Project-based notes
     * Quick links to resources, references

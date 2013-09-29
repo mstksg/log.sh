@@ -13,7 +13,7 @@ usage() {
   Message can also be piped in from standard input.
   Remember to escape message for special characters like !, ", ', and *
 
-    -f [filename] 
+    -f [filename]
         Filename (without extension) of the log file.
         Default: ".log"
 
@@ -65,7 +65,7 @@ do
   case $Option in
     f)
       LOGNAME="$OPTARG";;
-    d) 
+    d)
       FOUND_LOG="$OPTARG";;
     l)
       SHOW=1;;
