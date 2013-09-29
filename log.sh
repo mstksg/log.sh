@@ -1,11 +1,12 @@
 #!/bin/bash
 
 DEFAULTLOGNAME=".log"
+VERSION="1.0.0"
 
 usage() {
   cat <<-ENDOFUSAGE
 
-  $(basename $0) [-cCehst] [-f filename] [-d directory] [message]
+  $(basename $0) [-cCetsh] [-f filename] [-d directory] [message]
 
   Appends a line to a log file with a timestamp.  Basically, searches up the
   directory tree until the first valid log file is found.
@@ -23,10 +24,11 @@ usage() {
         Opens log file for editing using the \$EDITOR environment variable.
 
     -c
-        Creates the log file in the current directory if not already there.
+        Creates a log file in the current directory if not already there.
 
     -d [directory]
-        Overrides default searching mechanism and uses log from this directory.
+        Overrides default searching mechanism and uses the log from the
+            specified directory.
         Default: Automatic
 
     -C
@@ -42,6 +44,7 @@ usage() {
         Displays this message
 
   Written by Justin Le (justin@jle.im) 2013
+  Version $VERSION
 
 ENDOFUSAGE
   exit 0
