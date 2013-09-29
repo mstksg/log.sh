@@ -41,7 +41,7 @@ usage() {
     -h
         Displays this message
 
-  Written by Justin Le (justin@jle0.com) 2013
+  Written by Justin Le (justin@jle.im) 2013
 
 ENDOFUSAGE
   exit 0
