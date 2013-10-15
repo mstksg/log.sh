@@ -1,5 +1,9 @@
 Simple command line logging script to log a one-off note.
 
+[Blog post describing usage.][blog]
+
+[blog]: http://blog.jle.im/entry/log-sh-lightweight-command-line-note-logging
+
 Useful for simple things like:
 
 * Project-based notes
@@ -39,7 +43,7 @@ log.sh -l                     # outputs the contents of the active .log file
 
 cd ../
 
-log.sh -t "buy milk"
+log.sh -t buy milk
 
 log.sh -l
 # Log file: ./.log.log
@@ -54,6 +58,6 @@ log.sh -e                     # opens active log file in your favorite text
 Full usage can be found by typing
 
 ~~~sh
-log.sh -t
+log.sh -h
 ~~~
 
